@@ -1,0 +1,7 @@
+name = "hello-go"
+main = "src/index.ts"
+compatibility_date = "2025-07-29"
+
+[[services]]
+binding = "container"
+service = "container"

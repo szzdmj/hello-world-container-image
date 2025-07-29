@@ -80,4 +80,4 @@ func main() {
 	http.HandleFunc("/", index(&s))
 	http.HandleFunc("/health", health(&s))
 
-	log.Printf("L
+	log.Printf("Listening on %s:%d", *addr, *port)

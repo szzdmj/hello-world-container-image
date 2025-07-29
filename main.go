@@ -70,8 +70,9 @@ func health(s *State) http.HandlerFunc {
 }
 
 func main() {
-	addr := flag.String("addr", "127.0.0.1", "address to listen on")
-	port := flag.Int("port", 8000, "TCP port to listen on")
+	// 修改为 Cloudflare 要求监听地址和端口
+	addr := flag.String("addr", "0.0.0.0", "address to listen on")
+	port := flag.Int("port", 8080, "TCP port to listen on")
 
 	flag.Parse()
 
@@ -79,6 +80,4 @@ func main() {
 	http.HandleFunc("/", index(&s))
 	http.HandleFunc("/health", health(&s))
 
-	log.Printf("Listening on %s:%d...", *addr, *port)
-	log.Fatal(http.ListenAndServe(fmt.Sprintf("%s:%d", *addr, *port), nil))
-}
+	log.Printf("L

@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-container",
+  "name": "hello-go",
   "compatibility_date": "2025-07-29",
   "main": "src/index.ts",
   "workers_dev": true,

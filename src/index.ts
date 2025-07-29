@@ -1,5 +1,10 @@
+// src/index.ts
 export default {
-  async fetch(request: Request, env: any, ctx: ExecutionContext): Promise<Response> {
-    return await env.container.fetch(request);
-  }
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    return env.container.fetch(request);
+  },
 };
+
+export interface Env {
+  container: Fetcher;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "hello-world-container",
+  "compatibility_date": "2025-07-29",
+  "main": "src/index.ts",
+  "workers_dev": true,
+
+  "container": {
+    "build": {
+      "dockerfile": "./Dockerfile"
+    },
+    "service_binding": {
+      "container": {}
+    }
+  }
+}

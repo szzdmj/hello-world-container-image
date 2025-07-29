@@ -3,5 +3,8 @@
   "compatibility_date": "2025-07-29",
   "container": {
     "image": "Dockerfile"
+  },
+"assets": {
+    "directory": "./dist"
   }
 }

@@ -1,6 +1,10 @@
-name = "hello-go"
-main = "src/index.ts"
-compatibility_date = "2025-07-29"
-
-[services.container]
-image = "Dockerfile"
+{
+  "name": "hello-go",
+  "services": [
+    {
+      "container": {
+        "image": "Dockerfile"
+      }
+    }
+  ]
+}
